@@ -1,0 +1,38 @@
+{
+  "succulents": [
+    {
+      "id": 1,
+      "name": "Ophelia",
+      "type": "Cactaceae",
+      "img_src": "./assets/succ/ophelia.jpg",
+      "short_description": "bla",
+      "description": "bla bla"
+    },
+    {
+      "id": 2,
+      "name": "Charlie",
+      "type": "Chlorophytum comosum",
+      "img_src": "./assets/succ/charlie.jpg",
+      "short_description": "bla",
+      "description": "bla bla"
+    },
+    {
+      "id": 3,
+      "name": "Aine",
+      "type": "Chlorophytum comosum",
+      "img_src": "./assets/succ/aine.jpg",
+      "short_description": "bla",
+      "description": "bla bla"
+    },
+    {
+      "id": 3,
+      "name": "Aristaeus",
+      "type": "Opuntia microdasys",
+      "img_src": "./assets/succ/aristaeus.jpg",
+      "short_description": "bla",
+      "description": "bla bla"
+    }
+  ]
+
+
+}
