@@ -1,0 +1,40 @@
+@import '../theme/fonts.css';
+@use '../theme/variables.module' as variables;
+
+.rating {
+    list-style: none;
+    color: #f1c40f;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    background-color: hotpink;
+}
+
+.rating li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+    font-family: "Courier New";
+}
+
+.name {
+    font-family: Courier New;
+    font-size: 2rem;
+    margin-left: 10px;
+    font-stretch: expanded;
+    margin-bottom: 0;
+}
+
+.nickname {
+    font-family: Sacramento;
+    font-style: italic;
+    margin-left: 100px;
+}
+
+.imgSucculent {
+    position: relative;
+    width: 100%;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
