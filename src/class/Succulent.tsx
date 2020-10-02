@@ -7,21 +7,23 @@ export class Succulent implements ISucculent {
   private _name!: string;
   private _shortDescription!: string;
   private _type!: string;
+  private _water!: number;
+  private _sun!: number;
 
-  constructor(
-    id: number,
-    name: string,
-    type: string,
-    imgSrc: string,
-    shortDescription: string,
-    description: string
-  ) {
-    this._description = description;
-    this._id = id;
-    this._name = name;
-    this._imgSrc = imgSrc;
-    this._shortDescription = shortDescription;
-    this._type = type;
+  get water(): number {
+    return this._water;
+  }
+
+  set water(value: number) {
+    this._water = value;
+  }
+
+  get sun(): number {
+    return this._sun;
+  }
+
+  set sun(value: number) {
+    this._sun = value;
   }
 
   get description(): string {

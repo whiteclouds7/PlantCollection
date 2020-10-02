@@ -18,7 +18,9 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Christina's Succulent Collection</IonTitle>
+          <IonTitle color="tertiary" className={styles.title}>
+            Christina's Succulent Collection
+          </IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -31,16 +33,7 @@ const Home: React.FC = () => {
           {succulents.succulents.map((succulent) => (
             <IonCol size="6" size-lg="4" size-xs="12">
               <SucculentCard
-                succulent={
-                  new Succulent(
-                    succulent.id,
-                    succulent.name,
-                    succulent.type,
-                    succulent.img_src,
-                    succulent.short_description,
-                    succulent.description
-                  )
-                }
+                succulent={Object.assign(new Succulent(), succulent)}
               />
             </IonCol>
           ))}

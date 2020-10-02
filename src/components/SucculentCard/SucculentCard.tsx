@@ -9,7 +9,8 @@ import {
   IonCardTitle,
   IonFab,
 } from "@ionic/react";
-import "./SucculentCard.css";
+import "./_SucculentCard.module.scss";
+import styles from "./_SucculentCard.module.scss";
 import { addOutline } from "ionicons/icons";
 import { ISucculentProp } from "../../class/ISucculent";
 
@@ -17,7 +18,7 @@ export const SucculentCard: FC<ISucculentProp> = ({ succulent }) => {
   return (
     <IonCard>
       <img
-        className="succulentImage"
+        className={styles.succulentImage}
         src={succulent.imgSrc}
         alt={succulent.type}
       />
@@ -30,7 +31,8 @@ export const SucculentCard: FC<ISucculentProp> = ({ succulent }) => {
         <IonFab vertical="bottom" horizontal="end">
           <IonFabButton
             href={`/succulent/${succulent.id}`}
-            className="moreButton"
+            className={styles.moreButton}
+            color="tertiary"
           >
             <IonIcon icon={addOutline} />
           </IonFabButton>

@@ -1,8 +1,29 @@
 @import '../theme/fonts.css';
 @use '../theme/variables.module' as variables;
 
-.rating {
+.listInLine {
     list-style: none;
+}
+
+.listInLine li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.water {
+    @extend .listInLine;
+    color: blue;
+}
+
+.sun {
+    @extend .listInLine;
+    color: #f1c40f;
+}
+
+.rating {
+    @extend .listInLine;
     color: #f1c40f;
     width: 100%;
     margin: auto;
@@ -10,23 +31,16 @@
     background-color: hotpink;
 }
 
-.rating li {
-    display: inline-block;
-    padding: 5px;
-    font-size: 20px;
-    font-family: "Courier New";
-}
-
 .name {
-    font-family: Courier New;
     font-size: 2rem;
     margin-left: 10px;
     font-stretch: expanded;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 .nickname {
-    font-family: Sacramento;
+    font-family: Sacramento, sans-serif;
     font-style: italic;
     margin-left: 100px;
 }
